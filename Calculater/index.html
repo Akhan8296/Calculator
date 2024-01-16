@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculator-container">
+      <div class="display">
+        <input type="text" id = "count" >
+      </div>
+      <div class="button-container">
+        <button onclick="display(7)" class="normal-button">7</button>
+        <button onclick="display(8)" class="normal-button">8</button>
+        <button onclick="display(9)" class="normal-button">9</button>
+        <button onclick="clearDisplay()" class="operator">C</button>
+        <button onclick="display(4)" class="normal-button">4</button>
+        <button onclick="display(5)" class="normal-button">5</button>
+        <button onclick="display(6)" class="normal-button">6</button>
+        <button onclick="display('x')" class="operator">x</button>
+        <button onclick="display(1)" class="normal-button">1</button>
+        <button onclick="display(2)" class="normal-button">2</button>
+        <button onclick="display(3)" class="normal-button">3</button>
+        <button onclick="display('÷')" class="operator">÷</button>
+        <button onclick="display(0)" class="normal-button">0</button>
+        <button  onclick = "calculate()" class="operator">=</button>
+        <button onclick="display('+')" class="operator">+</button>
+        <button onclick="display('-')" class="operator">-</button>
+      </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
