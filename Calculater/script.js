@@ -4,9 +4,12 @@ const display = (input) => {
 }
 const calculate = () => {
   let disp = document.getElementById("count").value;
-  let exp = disp.replace(/÷/g,"/").replace(/x/g,"*");
-  let result = eval(exp);
-  document.getElementById("count").value = result;
+  try{
+    let exp = disp.replace(/÷/g,"/").replace(/x/g,"*");
+    document.getElementById("count").value = eval(exp);
+  }catch{
+    document.getElementById("count").value = "Error";
+  }
 }
 function clearDisplay() {
   document.getElementById("count").value = "";
